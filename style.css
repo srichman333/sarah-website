@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Verdana', sans-serif;
+    font-family: "Playwrite AU TAS", cursive;
+    /* font-family: "Playwrite US Modern", cursive; */
     box-sizing: border-box;
 }
 
@@ -10,7 +11,7 @@ html {
 }
 
 body {
-    background: #f2dca2;
+    background: #543527;
     color: #fff;
 }
 
@@ -31,7 +32,7 @@ body {
     width: 80%;
     height: 70vh;
     border-radius: 5%;
-    margin-top: -70px;
+    margin-top: -150px;
     margin-left: 10%;
     background-size: cover;
     background-position: center;
@@ -53,7 +54,8 @@ nav {
     right: 0;
     width: 100%;
     /* background: rgba(50,50,50,.5); */
-    background: #ab6905;
+    background: #78503e;
+    color: #000;
 }
 
 .logo {
@@ -77,7 +79,6 @@ nav ul li {
 }
 
 nav .name .words{
-    color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: sticky;
@@ -85,17 +86,17 @@ nav .name .words{
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: sticky;
+    color: #000;
 }
 
 nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #fff;
+    background: #000;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -175,18 +176,12 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 {
-    font-size: 60ox;
+    font-size: 40ox;
     margin-top: 20px;
 }
 
 .header-text h1 span {
     color: #fff;
-    font-size: larger;    
-    /* text-shadow:
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff;   */
 }
 
 #about {
@@ -216,7 +211,7 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #ab6905;
+    color: #e3c7ba;
 }
 
 .tab-titles {
@@ -236,7 +231,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ab6905;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -253,7 +248,6 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #6e4ca1;
     font-size: 14px;
 }
 
@@ -277,7 +271,8 @@ nav ul li a:hover::after {
 }
 
 .skills-list div {
-    background: #262626;
+    background: #78503e;
+    color: #e3c7ba;
     font-weight: 300;
     border-radius: 10px;
     transition: .5s;
@@ -288,8 +283,6 @@ nav ul li a:hover::after {
     flex-direction: row;
     padding: 0;
     margin: 0;
-    /* flex-wrap: wrap;
-    font-size: 60px; */
 }
 
 .skill p {
@@ -306,17 +299,18 @@ nav ul li a:hover::after {
 }
 
 .skills-list div:hover {
-    background: #ab6905;
+    background: #e3c7ba;
+    color: #543527;
     transform: translateY(-10px);
 }
 
-#portfolio {
+#projects {
     padding: 50px 0;
 }
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -326,21 +320,31 @@ nav ul li a:hover::after {
     position:relative;
     overflow: hidden;
     z-index: 0;
-    /* max-height: 500px; */
+    outline: 2px solid #e3c7ba;
 }
 
 .work-img {
     width: 100%;
-    border-radius: 10px;
+    max-height: 250px;
+    object-fit: cover;
     display: block;
     transition: transform .5s;
+}
+
+.work-title {
+    background: #e3c7ba;
+    color: #543527;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 
 .layer {
     top: 0;
     width: 100%;
     height: 0%;
-    background: linear-gradient(#ab6905, rgba(0, 0, 0, .6));
+    background: linear-gradient(#543527, rgba(189, 158, 143, .6));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -352,7 +356,7 @@ nav ul li a:hover::after {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     transition: height .5s;
 }
 
@@ -361,9 +365,13 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
 }
 
+.layer p {
+    margin-top: -40px;
+}
+
 .layer a {
     margin-top: 20px;
-    color: #ab6905;
+    color: #543527;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -386,21 +394,21 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ab6905;
+    border: 1px solid #e3c7ba;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #ab6905;
+    color: #e3c7ba;
     transition: .5s;
 }
 
 .btn:hover {
-    background: #ab6905;
-    color: #fff;
+    background: #e3c7ba;
+    color: #543527;
 }
 
 .contact-column {
-    color: #ab6905;
+    color: #e3c7ba;
     text-align: center;
     flex-basis: 35%;
 }
@@ -425,6 +433,6 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-    color: #ab6905;
+    color: #fff;
     transform: translateY(-5px);
 }

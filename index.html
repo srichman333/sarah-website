@@ -1,16 +1,21 @@
 <!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet"> -->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sarah Richman's Portfolio</title>
+        <title>Sarah Richman's Projects</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/df9bb4e76e.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
-
+        <div id="top"></div>
+        <div class="spacer"></div>
         <div id="header">
             <!-- <div class="spacer"></div> -->
             <div class=""container>
@@ -20,10 +25,10 @@
                         <div class="words">Sarah Richman</div>
                     </div>
                     <ul>
-                        <li><a href="#header">Home</a></li>
+                        <li><a href="#top">Home</a></li>
                         <!-- <li><a href="#about">About</a></li> -->
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -39,7 +44,7 @@
                         </div>
                     </div>
                     <div class="header-words">
-                        <h1> <span>Sarah Richman</span></h1>
+                        <h1> <span>SARAH RICHMAN</span></h1>
                         <p>A rising junior studying Applied Mathematics and Computer Science at Brown University.</p>
                     </div>
                 </div>
@@ -110,11 +115,11 @@
                     </div>
                     <div class="skill">
                         <img class="skill-image" src="images/skills/javascript.png">
-                        <p>JavaScript</p>
+                        <p>Java Script</p>
                     </div>
                     <div class="skill">
                         <img class="skill-image" src="images/skills/typescript.png">
-                        <p>Typescript</p>
+                        <p>Type Script</p>
                     </div>
                     <div class="skill">
                         <img class="skill-image" src="images/skills/html.png">
@@ -160,40 +165,90 @@
             </div>
         </div>
 
-        <div id="portfolio">
+        <div id="projects">
             <div class="spacer"></div>
             <div class="container">
-                <h1 class="sub-title">My Work</h1>
+                <h1 class="sub-title">My Projects</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img class="work-img" src="images/work-1.png">
+                        <img class="work-img" src="images/projects/asl.png">
                         <div class="layer">
-                            <h3>Social Media App</h3>
-                            <p> Desctiption sentence goes
-                                right here yay </p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <!-- <h3>Music App</h3> -->
+                            <p> A sign language translator that used Artificial Intelligence 
+                                (through Convolutional Neural Networks) to turn a live video 
+                                feed from a hand motion into the appropriate ASL symbool.</p>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
                         </div>
+                        <div class="work-title">Artificial Intelligence Sign Language Interpreter</div>
                     </div>
                     <div class="work">
-                        <img class="work-img" src="images/work-2.png">
+                        <img class="work-img" src="images/projects/dash.png">
                         <div class="layer">
-                            <h3>Music App</h3>
-                            <p> Desctiption sentence goes
-                                right here yay </p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <!-- <h3>Dash</h3> -->
+                            <p> A collaborative browser-based web application that supports 
+                                many forms of media in various document organizational.
+                                I focused on integrating data visualizations as a form of hypermedia. </p>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
                         </div>
+                        <div class="work-title">Dash - A Hypermedia Research Project</div>
                     </div>
                     <div class="work">
-                        <img class="work-img" src="images/work-3.png">
+                        <img class="work-img" src="images/projects/farm.png">
                         <div class="layer">
-                            <h3>Online Shopping App</h3>
-                            <p> Desctiption sentence goes
-                                right here yay </p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <!-- <h3>Interactive Farm Scene</h3> -->
+                            <p> An interactive farm scene created through Three.js. 
+                                Key features included physics for swaying grass and falling apples,
+                                live randomized scene generation, and the ability to explore the scene with a keyboard.
+                            </p>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
                         </div>
+                        <div class="work-title">Procedurally Generated 3-Dimensional Infinite Scene</div>
+                    </div>
+                    <div class="work">
+                        <img class="work-img" src="images/projects/weensy.png">
+                        <div class="layer">
+                            <!-- <h3>Operating System Functionality</h3> -->
+                            <p> A model of Operating System functionality to maintain memory isolation through concurrent
+                                processes through page tables, kernel and user memory spaces, processes, and virtual and physical memories.
+                            </p>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                        </div>
+                        <div class="work-title">Operating System Kernel to Delegate Virtual Memory</div>
+                    </div>
+                    <div class="work">
+                        <img class="work-img" src="images/projects/raytracer0.png">
+                        <div class="layer">
+                            <!-- <h3>Dash</h3> -->
+                            <p> A custom realtime scene renderer. Using vector graphics to cast light rays into
+                                the scene, I incorporated shadows, reflections, and texture mapping onto many different shapes.
+                            </p>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                        </div>
+                        <div class="work-title">Procedurally Generated 3-Dimensional Infinite Scene</div>
+                    </div>
+                    <div class="work">
+                        <img class="work-img" src="images/projects/othello0.png">
+                        <div class="layer">
+                            <!-- <h3>Dash</h3> -->
+                            <p> An Artificial Intelligence robot that uses the MiniMax algorith to
+                                play the game Othello with 3 different levels of intelligence/difficulty.
+                            </p>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                        </div>
+                        <div class="work-title">Artificial Intelligence Bot to Play Othello</div>
+                    </div>
+                    <div class="work">
+                        <img class="work-img" src="images/projects/website.png">
+                        <div class="layer">
+                            <!-- <h3>This Website!</h3> -->
+                            <p> I created this website using pure HTML and CSS.
+                                Thanks for checking it out :) </p>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                        </div>
+                        <div class="work-title">My Portfilio Website</div>
                     </div>
                 </div>
-                <a href="#" class="btn">See more</a>
+                <!-- <a href="#" class="btn">See more</a> -->
             </div>
         </div>
 
@@ -203,8 +258,8 @@
                 <div class="contact-column">
                     <h1 class="sub-title">Contact Me!</h1>
                     <p><i class="fa-solid fa-envelope"></i>sarah_n_richman@brown.edu &emsp; &emsp; &emsp; &emsp;</p>
-                    <p><i class="fa-solid fa-phone"></i>+1 (603) 974-3720 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</p>
-                    <p><i class="fab fa-linkedin"></i>www.linkedin.com/in/sarah-richman3 &emsp;</p>
+                    <p><i class="fa-solid fa-phone"></i>+1 (603) 974-3720 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</p>
+                    <p><i class="fab fa-linkedin"></i>www.linkedin.com/in/sarah-richman3 &nbsp;</p>
                     <!-- <div class="social-icons">
                         <a href="www.linkedin.com/in/sarah-richman3"><i class="fab fa-linkedin"></i></a>
                         www.linkedin.com/in/sarah-richman3
