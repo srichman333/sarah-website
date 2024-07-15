@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: #d2eefc;
+    background: #f2dca2;
     color: #fff;
 }
 
@@ -53,7 +53,7 @@ nav {
     right: 0;
     width: 100%;
     /* background: rgba(50,50,50,.5); */
-    background: #043f6b;
+    background: #ab6905;
 }
 
 .logo {
@@ -157,7 +157,7 @@ nav ul li a:hover::after {
     margin: 20%;
     margin-top: -15px;
     margin-left: 15px;
-    /* background: #d2eefc; */
+    /* background: #f2dca2; */
     border-radius: 10%;
     /* background: rgba(231,252,222, .7); */
 }
@@ -216,7 +216,7 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #043f6b;
+    color: #ab6905;
 }
 
 .tab-titles {
@@ -236,7 +236,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #043f6b;
+    background: #ab6905;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -271,41 +271,42 @@ nav ul li a:hover::after {
 
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
 .skills-list div {
     background: #262626;
-    padding: 40px;
-    font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: .5s;
 }
 
-.skills-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
+.skill {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    /* flex-wrap: wrap;
+    font-size: 60px; */
 }
 
-.skills-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
+.skill p {
+    font-size: 60x;
+    align-self: center;
+    text-align: center;
+    width: 100%;
 }
 
-.skills-list div a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+.skill-image {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
 }
 
 .skills-list div:hover {
-    background: #043f6b;
+    background: #ab6905;
     transform: translateY(-10px);
 }
 
@@ -339,7 +340,7 @@ nav ul li a:hover::after {
     top: 0;
     width: 100%;
     height: 0%;
-    background: linear-gradient(#043f6b, rgba(0, 0, 0, .6));
+    background: linear-gradient(#ab6905, rgba(0, 0, 0, .6));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -362,7 +363,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: #043f6b;
+    color: #ab6905;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -385,21 +386,21 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #043f6b;
+    border: 1px solid #ab6905;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #043f6b;
+    color: #ab6905;
     transition: .5s;
 }
 
 .btn:hover {
-    background: #043f6b;
+    background: #ab6905;
     color: #fff;
 }
 
 .contact-column {
-    color: #043f6b;
+    color: #ab6905;
     text-align: center;
     flex-basis: 35%;
 }
@@ -424,6 +425,6 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-    color: #043f6b;
+    color: #ab6905;
     transform: translateY(-5px);
 }
