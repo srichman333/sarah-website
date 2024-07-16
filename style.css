@@ -310,7 +310,7 @@ nav ul li a:hover::after {
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -325,7 +325,7 @@ nav ul li a:hover::after {
 
 .work-img {
     width: 100%;
-    max-height: 250px;
+    height: 250px;
     object-fit: cover;
     display: block;
     transition: transform .5s;
@@ -370,16 +370,26 @@ nav ul li a:hover::after {
 }
 
 .layer a {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #543527;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 60px;
     background: #fff;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     text-align: center;
+    transition: .5s;
+}
+
+.layer a i {
+    top: -5px;
+    position: relative;
+}
+
+.layer a:hover {
+    font-size: 16px;
 }
 
 .work:hover img{
@@ -419,15 +429,13 @@ nav ul li a:hover::after {
     font-size: 25px;
 }
 
-.social-icons {
-    margin-top: 30px;
-}
-
 .social-icons a {
+    margin-left: -20px;
+    padding: 0;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     margin-right: 30px;
-    color: #ababab;
+    color: #e3c7ba;
     display: inline-block;
     transition: .5s;
 }
