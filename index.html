@@ -25,13 +25,15 @@
                         <img src="images/sarah.png" class="logo">
                         <div class="words">Sarah Richman</div>
                     </div>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <!-- <li><a href="#about">About</a></li> -->
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <ul id="sideMenu">
+                        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                        <!-- <li><a href="#about" onclick="closeMenu()">About</a></li> -->
+                        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
                     </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
                 </nav>
 
                 
@@ -295,6 +297,23 @@
                 }
                 event.currentTarget.classList.add("active-link");
                 document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sideMenu = document.getElementById("sideMenu");
+            var home = document.getElementById("home");
+            function openMenu() {
+                if (home.offsetWidth<=715){
+                    sideMenu.style.right = "0";
+                    sideMenu.style.width = "150px";
+                }
+            }
+            function closeMenu() {
+                if (home.offsetWidth<=715){
+                    sideMenu.style.right = "-150px";
+                    sideMenu.style.width = "0";
+                }
             }
         </script>
 

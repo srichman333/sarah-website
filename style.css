@@ -30,7 +30,7 @@ body {
 
 #header {
     width: 80%;
-    height: 70vh;
+    height: 73vh;
     border-radius: 5%;
     margin-top: -150px;
     margin-left: 10%;
@@ -108,11 +108,12 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin: 20% 10%;
+    top: 30vh;
     margin-left: 0;
+    margin-bottom: 20%;
     font-size: 35px;
     display: flex;
-    height: 70vh;
+    height: 73vh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -120,7 +121,7 @@ nav ul li a:hover::after {
 
 .each-img {
     width: 80vw;
-    height: 70vh;
+    height: 73vh;
     margin: 0;
 }
 
@@ -149,7 +150,7 @@ nav ul li a:hover::after {
     left: 0;
     overflow: hidden;
     left: -50px;
-    max-height: 70vh;
+    max-height: 73vh;
     border-radius: 5%;
 }
 
@@ -261,6 +262,7 @@ nav ul li a:hover::after {
 
 #skills {
     padding: 30px 0;
+    margin-top: 20vh;
 }
 
 .skills-list {
@@ -443,4 +445,72 @@ nav ul li a:hover::after {
 .social-icons a:hover {
     color: #fff;
     transform: translateY(-5px);
+}
+
+nav .fas {
+    display: none;
+}
+/* for small screen */
+@media only screen and (max-width: 715px) {
+    .header-text {
+        height: 20vh;
+        width: calc(80vw + 120px);
+        width: 95vw;
+        margin-left: 3vw;
+        margin-bottom: 1px;
+        padding-right: 15vw;
+        font-size: 35px;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .header-words {
+        font-size: 11px;
+    }
+
+    #skills {
+        /* margin-top: -200px; */
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        padding: 25px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: #e3c7ba;
+        position: fixed;
+        top: 0; 
+        right: -150px;
+        width: 0;
+        height: max-content;
+        padding-top: 50px;
+        transition: .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .work-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        margin-top: 50px;
+    }
 }
