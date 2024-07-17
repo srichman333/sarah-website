@@ -466,11 +466,14 @@ nav .fas {
     }
 
     .header-words {
+        margin-top: 15px;
         font-size: 11px;
     }
 
-    #skills {
-        /* margin-top: -200px; */
+    .each-img {
+        width: 95vw;
+        height: 20vh;
+        margin: 0;
     }
 
     .sub-title {
@@ -512,5 +515,16 @@ nav .fas {
         grid-template-columns: 1fr;
         grid-gap: 40px;
         margin-top: 50px;
+    }
+
+    .layer {
+        font-size: 11px;
+    }
+
+    .layer a {
+        font-size: 10px;
+        line-height: 40px;
+        width: 30px;
+        height: 30px;
     }
 }
